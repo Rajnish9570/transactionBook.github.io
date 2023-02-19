@@ -26,8 +26,11 @@ function addTransaction(e) {
   e.preventDefault();
 
   if (text.value.trim() === '' || amount.value.trim() === ''|| date.value.trim() === '' ) {
-    alert('Please add a descriptions or amount or date ');
-  } else {
+ document.getElementById('message').style.display="block"
+  } 
+  else 
+  {
+    document.getElementById('message').style.display="none"
     const transaction = {
       id: generateID(),
       text: text.value,
