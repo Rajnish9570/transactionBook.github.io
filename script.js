@@ -123,7 +123,7 @@ function init() {
 
 init();
 
-form.addEventListener('submit', addTransactioned);
+form.addEventListener('submit', addTransaction);
 
 
 
