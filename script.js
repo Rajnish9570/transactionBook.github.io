@@ -117,13 +117,13 @@ function updateLocalStorage() {
 function init() {
   list.innerHTML = '';
 
-  transactions.forEach(addTransactionDOM);
+  transactions.forEach(addTransactionedDOM);
   updateValues();
 }
 
 init();
 
-form.addEventListener('submit', addTransaction);
+form.addEventListener('submit', addTransactioned);
 
 
 
