@@ -40,7 +40,7 @@ function addTransaction(e) {
 
     transactions.push(transaction);
 
-    addTransactionedDOM(transaction);
+    addTransactionDOM(transaction);
 
     updateValues();
 
@@ -58,7 +58,7 @@ function generateID() {
 }
 
 // Add transactions to DOM list
-function addTransactionedDOM(transaction) {
+function addTransactionDOM(transaction) {
   // Get sign
   const sign = transaction.amount < 0 ? '-' : '+';
 
@@ -117,7 +117,7 @@ function updateLocalStorage() {
 function init() {
   list.innerHTML = '';
 
-  transactions.forEach(addTransactionedDOM);
+  transactions.forEach(addTransactionDOM);
   updateValues();
 }
 
