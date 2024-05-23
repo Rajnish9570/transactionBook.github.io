@@ -40,7 +40,7 @@ function addTransaction(e) {
 
     transactions.push(transaction);
 
-    addTransactionDOM(transaction);
+    addTransactionedDOM(transaction);
 
     updateValues();
 
@@ -58,7 +58,7 @@ function generateID() {
 }
 
 // Add transactions to DOM list
-function addTransactionDOM(transaction) {
+function addTransactionedDOM(transaction) {
   // Get sign
   const sign = transaction.amount < 0 ? '-' : '+';
 
